@@ -1,3 +1,2 @@
-####################################
-SoMe bUllShit ToOl I CodeD         #
-####################################
+
+SoMe bUllShit ToOl I CodeD         
