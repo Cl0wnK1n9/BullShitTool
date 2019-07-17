@@ -50,7 +50,7 @@ def POSTAttack(thr34d,numberOfPort):
     
     
 def GETAttack(thr34d,numberOfPort):
-        print "Scanning....................................[.]" 
+    print "Scanning....................................[.]" 
     StoreThread = ['']*int(thr34d)  # use to store when  thread inited
     
     jump = int(numberOfPort)/int(thr34d)
@@ -103,8 +103,5 @@ elif method == 'get':
     GETAttack(thr34d,PortAmount)
 else:
     pass
-
-
-
 
 
